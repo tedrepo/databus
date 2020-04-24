@@ -2,6 +2,7 @@
 from databus.dispatcher.abstract_dispatcher import DispatcherTicket
 from databus.dispatcher.primal_factory import PrimalDispatcherFactory
 from databus.database.sql_db.sql_database_arguments import SqlDatabaseArguments
+from databus.database.sap_db.sap_database import SapDatabase
 
 
 def start_with_json_db():
@@ -28,4 +29,12 @@ def start_with_sql_db():
 
 
 if __name__ == "__main__":
-    start_with_json_db()
+    # todo
+    # sap db bitecek
+    # burası eski haline gelecek
+    # pylint
+    # publish
+    # pull request
+
+    # start_with_json_db()
+    SapDatabase().test_connection()
